@@ -7,7 +7,7 @@ function App() {
   const [secondsAmount,setSecondsAmount] = useState(COUNTDOWN_INITIAL_TIME_SECONDS)
   const minutes= Math.floor(secondsAmount/60);
   const seconds =(secondsAmount % 60);
-
+  
   useEffect(()=>{
    if(secondsAmount>0){
     setTimeout(()=>{
